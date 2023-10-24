@@ -4,56 +4,69 @@
         <form class="modal-buy-form" name="buy_form" novalidate>
             <div class="modal-buy-choco-option">
                 <div class="modal-buy-card">
-                    <img src="../images/Modals/kisspng-chocolate-bar-kinder-chocolate-white-chocolate-chocolate-nuts-5b0ef41cbe25b2 1.jpg" />
-                    <button class="modal-buy-choco-button" data-modal-close>100 g</button>
+                    <img src="./images/modals/kisspng-chocolate-bar-kinder-chocolate-white-chocolate-chocolate-nuts-5b0ef41cbe25b2-1.jpg" />
+                    <button class="modal-buy-choco-button">100 g</button>
                 </div>
                 <div class="modal-buy-card">
-                    <img src="../images/Modals/kisspng-chocolate-bar-praline-kinder-chocolate-bonbon-milk-5ae8399b302ae1 1.jpg" />
-                    <button class="modal-buy-choco-button" data-modal-close>200 g</button>
+                    <img src="./images/modals/kisspng-chocolate-bar-praline-kinder-chocolate-bonbon-milk-5ae8399b302ae1-1.jpg" />
+                    <button class="modal-buy-choco-button">200 g</button>
                 </div>
                 <div class="modal-buy-card">
-                    <img src="../images/Modals/transparent-chocolate-bar-dark-chocolate-png-free-image-download5dc7cabee44135 1.jpg" />
-                    <button class="modal-buy-choco-button" data-modal-close>300 g</button>
+                    <img src="./images/modals/transparent-chocolate-bar-dark-chocolate-png-free-image-download5dc7cabee44135-1.jpg" />
+                    <button class="modal-buy-choco-button">300 g</button>
                 </div>
             </div>
-            <label class="modal-buy-label">
-                <span class="modal-buy-label-span">Personal information</span><br />
-                <input class="modal-buy-label-input" type="text" name="name" placeholder="Name"/>
-                <input class="modal-buy-label-input"  type="text" name="surname" placeholder="Surname"/>
-            </label>
-            <label class="modal-buy-label">
-                <span class="modal-buy-label-span">Email</span><br />
-                <input class="modal-buy-label-input"  type="email" name="email" placeholder="Enter your email"/>
-            </label>
-            <label class="modal-buy-label">
-                <span class="modal-buy-label-span">Phone number</span><br />
-                <input class="modal-buy-label-input"  type="tel" name="phone" placeholder="Phone number"/>
-                <svg class="backdrop-form-icon phone-black-icon" width="18" height="18">
-                    <use xlink:href="./images/icons.svg#phone-black-icon"></use>
-                </svg>
-            </label>
-            <label class="modal-buy-label">
-                <span class="modal-buy-label-span">Card number</span><br />
-                <input class="modal-buy-label-input"  type="tel" name="phone" placeholder="Enter card"/>
-                <svg class="modal-buy-icon phone-black-icon" width="18" height="18">
-                    <use xlink:href="./images/icons.svg#phone-black-icon"></use>
-                </svg>
-            </label>
-            <label class="modal-buy-label">
-                <span class="modal-buy-label-span">Comment</span><br />
-                <textarea class="modal-buy-label-textarea" name="comment" rows="5" placeholder="Enter text"></textarea>
-            </label>
+            <div class="field-wrap-top-row">
+                <label class="modal-buy-label">
+                    <span class="modal-buy-label-span">Personal information</span><br />
+                    <input class="modal-buy-label-input name" type="text" name="name" placeholder="Name"/>
+                </label>
+                <label class="modal-buy-label">
+                    <input class="modal-buy-label-input surname"  type="text" name="surname" placeholder="Surname"/>
+                </label>
+            </div>
+            <div class="field-wrap">
+                <label class="modal-buy-label">
+                    <span class="modal-buy-label-span">Email</span><br />
+                    <input class="modal-buy-label-input"  type="email" name="email" placeholder="Enter your email"/>
+                </label>
+            </div>
+            <div class="field-wrap">
+                <label class="modal-buy-label">
+                    <span class="modal-buy-label-span">Phone number</span><br />
+                    <input class="modal-buy-label-input-phone"  type="tel" name="phone" placeholder="Phone number"/>
+                    <svg class="modal-buy-label-icon-phone icon-flag" width="32" height="24">
+                        <use xlink:href="/src/images/svg/icons.svg#icon-flag"></use>
+                    </svg>
+                    <span class="modal-buy-label-icon-span-1">+380</span><span class="modal-buy-label-icon-span-2">|</span>
+                </label>
+            </div>
+            <div class="field-wrap">
+                <label class="modal-buy-label">
+                    <span class="modal-buy-label-span">Card number</span><br />
+                    <input class="modal-buy-label-input"  type="tel" name="phone" placeholder="Enter card"/>
+                    <svg class="modal-buy-label-icon-card icon-mastercard" width="30" height="19">
+                        <use xlink:href="/src/images/svg/icons.svg#icon-mastercard"></use>
+                    </svg>
+                </label>
+            </div>
+            <div class="field-wrap">
+                <label class="modal-buy-label">
+                    <span class="modal-buy-label-span">Comment</span><br />
+                    <textarea class="modal-buy-label-textarea" name="comment" rows="5" placeholder="Enter text"></textarea>
+                </label>
+            </div>
             <button class="modal-buy-submit-button" type="submit">Submit</button>
         </form>
         <button class="modal-buy-close" data-modal-close>
-            <svg class="close-icon" width="8" height="8">
-                <use xlink:href="./images/icons.svg#close-icon"></use>
+            <svg class="close-icon icon-close" width="28" height="28">
+                <use xlink:href="/src/images/svg/icons.svg#icon-close"></use>
             </svg>
         </button>
-    </div>
+</div>
 </div>
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal-1>
     <div class="modal-review">
         <h2 class="modal-review-header"><span class="modal-review-header-span-1">leave a review about</span><br /><span class="modal-review-header-span-2">our chocolate</span></h2>
         <form class="modal-review-form" name="review_form" novalidate>
@@ -64,24 +77,43 @@
                 <input class="modal-review-label-input"  type="email" name="email" placeholder="Email"/>
             </label>
             <label class="modal-review-label">
-                <input class="modal-review-label-input"  type="tel" name="phone" placeholder="Phone number"/>
-                <svg class="modal-review-label-icon" width="18" height="18">
-                    <use xlink:href="./images/icons.svg#phone-black-icon"></use>
+                <input class="modal-review-label-input-phone"  type="tel" name="phone" placeholder="Phone number"/>
+                <svg class="modal-review-label-icon-phone icon-flag" width="32" height="24">
+                    <use xlink:href="/src/images/svg/icons.svg#icon-flag"></use>
                 </svg>
+                <span class="modal-review-label-icon-span-1">+380</span><span class="modal-review-label-icon-span-2">|</span>
             </label>
             <label class="modal-review-label">
                 <textarea class="modal-review-label-textarea" name="comment" rows="5" placeholder="Enter text"></textarea>
             </label>
             <button class="modal-review-send-button" type="submit">Send</button>
         </form>
-        <button class="modal-review-close" data-modal-close>
-            <svg class="close-icon" width="8" height="8">
-                <use xlink:href="./images/icons.svg#close-icon"></use>
+        <button class="modal-review-close" data-modal-close-1>
+            <svg class="close-icon icon-close" width="28" height="28">
+                <use xlink:href="/src/images/svg/icons.svg#icon-close"></use>
             </svg>
         </button>
     </div>
 </div>
 
-
-
-<script src="./js/modal.js"></script>
+    
+    
+    <div class="backdrop is-hidden" data-modal-2>
+        <div class="modal-subscribe-img">
+        <button class="modal-subscribe-close" data-modal-close-2>
+            <svg class="close-icon icon-close" width="28" height="28">
+                <use xlink:href="/src/images/svg/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="modal-subscribe">
+        <h2 class="modal-subscribe-header"><span class="modal-subscribe-header-span-1">explore our</span><br /><span class="modal-subscribe-header-span-2">new chocolate</span><span class="modal-subscribe-header-span-1"> first!</span></h2>
+        <form class="modal-subscribe-form" name="subscribe_form" novalidate>
+            <label class="modal-subscribe-label">
+                <input class="modal-subscribe-label-input"  type="email" name="subscribe_email" placeholder="Enter your email"/>
+            </label>
+            <button class="modal-subscribe-send-button" type="submit">Subscribe</button>
+        </form>
+    </div>
+</div>
+    
