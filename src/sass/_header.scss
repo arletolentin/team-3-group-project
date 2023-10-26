@@ -39,8 +39,7 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 24px;
-  margin-bottom: 32px;
+  margin: 24px 32px 32px 32px;
 }
 
 .header-container {
@@ -78,7 +77,6 @@ button {
 .icon-logo {
   stroke: var(--orange);
   fill: var(--pastel-orange);
-  margin-left: 4px;
 }
 
 .header-menu {
@@ -113,7 +111,8 @@ button {
   gap: 18px;
 }
 
-.icon-networks {
+.icon-networks,
+.icon-burger {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,17 +126,23 @@ button {
   stroke: var(--orange);
 }
 
+.burger-menu {
+  display: none;
+}
+
 .section-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 72px;
+  margin: 0px 32px 72px 32px;
 }
 
 .section-background {
   background: linear-gradient( 180deg, var(--black-gradient1) 0%, var(--black-gradient2) 100% ), 
               url('../images/image-header.jpg'),
             lightgrey -70.319px -105.03px / 110.32% 139.265% no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   border-radius: 30px;
   width: 1136px;
@@ -163,8 +168,16 @@ button {
 
 .section-buttons {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigate-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
 }
 
 .buy-button {
@@ -178,7 +191,6 @@ button {
   font-weight: 600;
   line-height: normal;
   transition: color var(--animation), background-color var(--animation);
-  margin-right: 14px;
 }
 
 .buy-button:hover,
@@ -204,7 +216,6 @@ button {
   font-weight: 600;
   line-height: normal;
   transition: color var(--animation), border var(--animation);
-  margin-right: 585px;
 }
 
 .how-button:hover,
@@ -222,7 +233,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   gap: 14px;
 }
 
@@ -270,4 +281,244 @@ button {
 .scroll-container:hover svg,
 .scroll-container:focus svg {
   fill: var(--white);
+}
+
+/* Tablet View */
+@media only screen and (max-width: 768px) {
+  .header-dashboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 32px 24px 32px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 704px;
+  }
+  
+  .header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -.42px;
+    gap: 4px;
+  }
+  
+  .logo-style {
+    font-family: Montserrat;
+    font-style: italic;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -.42px;
+  }
+  
+  .header-menu,
+  .header-networks {
+    display: none
+  }
+
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 32px 50px 32px;
+  }
+  
+  .section-background {
+    background: linear-gradient( 180deg, var(--black-gradient1) 0%, var(--black-gradient2) 100% ), 
+                url('../images/image-header-tablet.jpg'),
+              lightgrey -427.239px -24.924px / 195.428% 103.07% no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    width: 704px;
+    height: 890px;
+  }
+  
+  .section-content {
+    margin: 671px 40px 40px 40px;
+  }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 375px) {
+  .header-dashboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 14px 20px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 335px;
+  }
+  
+  .header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -.42px;
+    gap: 4px;
+  }
+  
+  .logo-style {
+    font-family: Montserrat;
+    font-style: italic;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -.42px;
+  }
+  
+  .header-menu,
+  .header-networks {
+    display: none
+  }
+
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .icon-burger {
+    width: 28px;
+    height: 28px;
+  }
+
+  .section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px 71px 20px;
+  }
+  
+  .section-background {
+    background: linear-gradient( 180deg, var(--black-gradient1) 0%, var(--black-gradient2) 100% ), 
+                url('../images/image-header-mobile.jpg'),
+              lightgrey -427.239px -24.924px / 195.428% 103.07% no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    width: 335px;
+    height: 621px;
+  }
+  
+  .section-content {
+    margin: 395px 20px 21px 20px;
+  }
+  
+  .section-caption {
+    width: 295px;
+    height: 72px;
+    color: var(--white);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500px;
+    line-height: 24px;
+    letter-spacing: -.6px;
+    margin-bottom: 32px;
+    cursor: default;
+  }
+  
+  .section-buttons {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .buy-button {
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: 100px;
+    padding: 12px 28px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: color var(--animation), background-color var(--animation);
+  }
+
+  .how-button {
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 100px;
+    padding: 12px 28px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: color var(--animation), border var(--animation);
+  }
+  
+  .scroll-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+  
+  .scroll-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -.36px;
+    cursor: default;
+    transition: color var(--animation);
+  }
+  
+  .scroll-button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    transition: background-color var(--animation);
+  }
 }
