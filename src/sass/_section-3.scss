@@ -1,7 +1,30 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: 128px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.title-decor {
+  color: #FD9222;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
 .how-made-video-container {
     position: relative;
     display: block;
-    width: 100%;
+    width: 600px;
     height: 500px;
     margin-bottom: 20px;
   }
@@ -62,7 +85,8 @@
     padding: 20px 14px;
     border-radius: 15px;
   
-    background: var(--white-color);
+    border-radius: 15px;
+    background: #FFF;
   }
   
   .text-content__title {
@@ -97,6 +121,7 @@
     border: 1px solid #eceded;
     border-radius: 50%;
   }
+
   
   @media screen and (min-width: 768px) {
     .how-made-content {
