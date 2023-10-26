@@ -37,73 +37,126 @@ body {
 
 /* Subscribe Section */
 
-.subscribe-bg {
-    padding: 72px 367px 72px 366px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.20),
-            rgba(0, 0, 0, 0.20)),
-        url(../images/subcribe.jpg);
-    max-width: 1200px;
-    max-height: 370px;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    background-position: center;
+.subscribe {
+    padding: 62px 20px;
+    max-width: 375px;
+    background-image: url(/src/images/subscribe/Subcribe1x-375.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
-.container {
-    flex-shrink: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.subscribe-container {
+.subscribe-content {
     display: flex;
     flex-direction: column;
-    padding: 72px 367px 72px 366px;
-    justify-content: center;
     align-items: center;
-    gap: 24px;
 }
 
-.subscribe-title {
-    color: var(--whitecolor);
-    text-align: center;
-    font-size: 24px;
+.subscribe-header {
+    margin-bottom: 24px;
+    max-width: 290px;
     font-weight: 600;
-    line-height: 28px;
-    letter-spacing: 0.02em;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--whitecolor);
 }
 
 .subscribe-text {
-    color: var(--whitecolor);
-    text-align: center;
-    font-size: 14px;
+    margin-bottom: 24px;
+    max-width: 326px;
+    /* margin: 0 auto; */
     font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--whitecolor);
 }
 
-.subscribe-button {
-    cursor: pointer;
+.subscribe-btn {
+    padding: 12px 28px;
+    background-color: var(--orangecolor);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
     color: var(--whitecolor);
-    background: var(--orangecolor);
-    font-family: inherit;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    border: none;
     border-radius: 100px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 14px 40px;
+    margin: 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
+.subscribe-btn:hover,
+.subscribe-btn:focus {
     background-color: var(--damaskcolor);
     color: var(--orangecolor);
+}
+
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .subscribe {
+        background-image: url(/src/images/subscribe/Subcribe2x-375.jpg);
+    }
+}
+
+/* ----------------------------- TABLET ------------------------------- */
+
+@media screen and (min-width: 768px) {
+    .subscribe {
+        padding: 72px 150px;
+        max-width: 768px;
+        background-image: url(/src/images/subscribe/Subcribe1x-768.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .subscribe {
+            background-image: url(/src/images/subscribe/Subcribe2x-768.jpg);
+        }
+    }
+
+    .subscribe-header {
+        width: 378px;
+        font-size: 24px;
+        line-height: 1.166;
+    }
+
+    .subscribe-text {
+        max-width: 467px;
+    }
+
+    .subscribe-btn {
+        padding: 14px 40px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
+
+/* --------------------- DESKTOP ------------------------------- */
+
+@media screen and (min-width: 1200px) {
+    .subscribe {
+        padding: 72px 366px;
+        max-width: 1200px;
+        background-image: url(/src/images/subscribe/Subcribe1x-1200.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .subscribe {
+            background-image: url(/src/images/subscribe/Subcribe2x-1200.jpg);
+        }
+    }
 }
 
 /* Footer Section */
