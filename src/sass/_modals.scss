@@ -36,6 +36,19 @@
     position:absolute;
     top: 2.5%;
     left: 90%;
+    background-color: #FAFAFA;
+}
+
+.close-icon {
+    stroke: #111;
+}
+
+.modal-buy-close:hover > .close-icon {
+    stroke: #FD9222;
+}
+
+.modal-buy-close:active > .close-icon {
+    stroke: #FD9222;
 }
 
 .modal-buy {
@@ -136,6 +149,16 @@
     width: 417px;
 }
 
+.modal-buy-label-span {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+}
+
 .field-wrap-top-row {
     display: flex;
     align-items: flex-end;
@@ -209,13 +232,10 @@
 }
 
 .modal-buy-label-input-phone {
-	display: flex;
     padding-left: 150px;
     padding-right: 22px;
     padding-top: 22px;
     padding-bottom: 22px;
-    align-items: flex-start;
-    gap: 40px;
     width: 250px;
     height: 22px;
     margin-top: 8px;
@@ -257,6 +277,16 @@
     font-weight: 600;
     line-height: normal;
 }
+
+.modal-buy-submit-button:hover {
+    background: #FCF1E0;
+    color: #FD9222;
+}
+
+.modal-buy-submit-button:active {
+    background: #FCF1E0;
+    color: #FD9222;
+}
 /* END OF MODAL-BUY STYLING */
 
 
@@ -273,6 +303,15 @@
     position:absolute;
     top: 2.5%;
     left: 90%;
+    background-color: #FAFAFA;
+}
+
+.modal-review-close:hover > .close-icon {
+    stroke: #FD9222;
+}
+
+.modal-review-close:active > .close-icon {
+    stroke: #FD9222;
 }
 
 .modal-review {
@@ -380,13 +419,10 @@
 }
 
 .modal-review-label-input-phone {
-	display: flex;
     padding-left: 150px;
     padding-right: 22px;
     padding-top: 22px;
     padding-bottom: 22px;
-    align-items: flex-start;
-    gap: 40px;
     width: 265px;
 
     border-radius: 13px;
@@ -418,6 +454,16 @@
     border: 0;
     color: #FFF;
 }
+
+.modal-review-send-button:hover {
+    background: #FCF1E0;
+    color: #FD9222;
+}
+
+.modal-review-send-button:active {
+    background: #FCF1E0;
+    color: #FD9222;
+}
 /* END OF MODAL-REVIEW STYLING */
 
 
@@ -433,7 +479,19 @@
     position:absolute;
     top: 10%;
     left: 90%;
-	background-color: #FFF;
+    background-color: #fafafa00;
+}
+
+.subscribe-close-icon {
+    stroke: #FFF;
+}
+
+.modal-subscribe-close:hover > .subscribe-close-icon {
+    stroke: #FD9222;
+}
+
+.modal-subscribe-close:active > .subscribe-close-icon {
+    stroke: #FD9222;
 }
 
 .modal-subscribe {
@@ -532,5 +590,291 @@
 	background: #FD9222;
 	color: #FFF;
 }
+
+.modal-subscribe-send-button:hover {
+    background: #FCF1E0;
+    color: #FD9222;
+}
+
+.modal-subscribe-send-button:active {
+    background: #FCF1E0;
+    color: #FD9222;
+}
 /* END OF MODAL-SUBSCRIBE STYLING */
 
+
+
+
+/* START OF MOBILE STYLING */
+    // ------------------------------------BUY-MODAL
+@media (max-width: 480px) {
+
+    .modal-buy {
+        width: 311px;
+        align-items: center;
+    }
+
+    .modal-buy-header {
+        margin-top: 32px;
+    }
+
+    .modal-buy-header-span-1 {
+        font-size: 20px;
+        line-height: 24px; /* 120% */
+        letter-spacing: -0.6px;
+    }
+
+    .modal-buy-header-span-2 {
+        font-size: 20px;
+        line-height: 24px; /* 120% */
+        letter-spacing: -0.6px;
+    }
+
+    .modal-buy-choco-option {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 14px;
+    }
+
+    .modal-buy-card {
+        flex-direction: row;
+        width: 231px;
+        height: 69px;
+        justify-content: center;
+        gap: 77px;
+        padding: 6px 16px;
+        margin-bottom: 0;
+    }
+
+    .modal-buy-choco-button {
+        width: 43px;
+        padding: 6px 16px;
+    }
+
+    .modal-buy-card-img {
+        width: 84px;
+        height: 69px;
+    }
+
+    .modal-buy-form {
+        width: 263px;
+        padding: 32px 24px;
+    }
+
+    .field-wrap-top-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .modal-buy-label-input.name,
+    .modal-buy-label-input.surname {
+        width: 227px;
+        height: auto;
+        padding: 14px 18px;
+    }
+
+    .modal-buy-label-input {
+        width: 227px;
+        height: auto;
+        padding: 14px 18px;
+    }
+
+    .modal-buy-label-input-phone {
+        width: 51.5%;
+        height: auto;
+        padding-left: 110px;
+        padding-right: 18px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .modal-buy-label-input::placeholder,
+    .modal-buy-label-input-phone::placeholder,
+    .modal-buy-label-textarea::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.28px;
+    }
+
+    .modal-buy-label-textarea {
+        width: 227px;
+        height: 91px;
+        padding: 14px 18px;
+    }
+
+    .modal-buy-submit-button {
+        width: 53px;
+        padding: 14px 40px;
+        height: 17px;
+    }
+
+    .modal-buy-label-icon-phone {
+        left: 40px;
+        top: 72.3%;
+        width: 24px;
+        height: 18px;
+    }
+
+    .modal-buy-label-icon-span-1 {
+        left: 72px;
+        top: 72.4%;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.28px;
+    }
+
+    .modal-buy-label-icon-span-2 {
+        left: 115px;
+        top: 72.2%;
+    }
+
+    .modal-buy-label-span {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px; /* 116.667% */
+        letter-spacing: -0.24px;
+    }
+
+    .modal-buy-close {
+        top: 14px;
+        left: 87%;
+    }
+
+    // ------------------------------------REVIEW-MODAL
+    .modal-review {
+        width: 263px;
+        height: 471px;
+        padding-top: 32px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 0;
+    }
+
+    .modal-review-header-span-1 {
+        font-size: 20px;
+        line-height: 24px; /* 120% */
+        letter-spacing: -0.6px;
+    }
+
+    .modal-review-header-span-2 {
+        font-size: 20px;
+        line-height: 24px; /* 120% */
+        letter-spacing: -0.6px;
+    }
+
+    .modal-review-form {
+        width: 263px;
+        margin-top: 32px;
+        gap: 14px;
+    }
+
+    .modal-review-label-input {
+        width: 227px;
+        height: 17px;
+        padding: 14px 18px;
+    }
+
+    .modal-review-label-input-phone {
+        width: 136px;
+        height: 17px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-top: 14px;
+        padding-left: 105px;
+    }
+
+    .modal-review-label-textarea {
+        width: 227px;
+        height: 91px;
+        padding: 14px 18px;
+    }
+
+    .modal-review-label-icon-phone {
+        left: 40px;
+        top: 51%;
+        width: 24px;
+        height: 18px;
+    }
+
+    .modal-review-label-icon-span-1 {
+        left: 72px;
+        top: 51%;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.28px;
+    }
+
+    .modal-review-label-icon-span-2 {
+        left: 115px;
+        top: 50.5%;
+    }
+
+    .modal-review-label-input::placeholder,
+    .modal-review-label-input-phone::placeholder,
+    .modal-review-label-textarea::placeholder {
+        font-size: 14px;
+        letter-spacing: -0.28px;
+    }
+
+    .modal-review-send-button {
+        width: 37px;
+        height: 17px;
+        padding: 12px 28px;
+    }
+
+    .modal-review-close {
+        top: 14px;
+        left: 87%;
+    }
+
+    // ------------------------------------SUBSCRIBE-MODAL
+    .modal-subscribe-img {
+        height: 169px;
+        width: 311px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;    
+    }
+
+    .modal-subscribe {
+        width: 263px;
+        padding: 32px 24px;
+    }
+
+    .modal-subscribe-header-span-1 {
+        font-size: 20px;
+        line-height: 24px; /* 120% */
+        letter-spacing: -0.6px;
+    }
+
+    .modal-subscribe-header-span-2 {
+        font-size: 20px;
+        line-height: 24px; /* 120% */
+        letter-spacing: -0.6px;
+    }
+
+    .modal-subscribe-label-input {
+        width: 220px;
+        height: 17px;
+        padding: 14px 18px;
+    }
+
+    .modal-subscribe-label-input::placeholder {
+        font-size: 14px;
+        letter-spacing: -0.28px;
+    }
+
+    .modal-subscribe-send-button {
+        position: absolute;
+        right: 24px;
+        width: 44px;
+        height: 17px;
+        padding: 14px 28px;
+    }
+
+    .modal-subscribe-close {
+        top: 14px;
+        left: 87%;
+    }
+}
