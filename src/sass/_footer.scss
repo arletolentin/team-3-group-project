@@ -112,9 +112,12 @@ body {
     background-color: var(--darkvioletcolor);
     padding-top: 32px;
     padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
 }
 
 .container-footer {
+    width: 1200px;
     padding-left: 32px;
     padding-right: 32px;
 }
