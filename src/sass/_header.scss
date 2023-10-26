@@ -43,6 +43,13 @@ button {
   margin-bottom: 32px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1136px;
+}
+
 .header-logo {
   display: flex;
   flex-direction: row;
