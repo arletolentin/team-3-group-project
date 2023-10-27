@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
 .backdrop {
     background: rgba(46, 47, 66, 0.40);
     position: fixed;
@@ -15,6 +21,7 @@
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: auto;
     transform: scale(1);
+    z-index: 9999;
 }
 
 .backdrop.is-hidden {
