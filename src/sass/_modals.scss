@@ -32,6 +32,10 @@
     transform: scale(0.5);
 }
 
+.field-wrap {
+    position: relative;
+}
+
 /* START OF MODAL-BUY STYLING */
 
 .modal-buy-close {
@@ -201,10 +205,6 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.36px;
-}
-
-.field-wrap {
-    position: relative;
 }
 
 .modal-buy-label-icon-phone {
