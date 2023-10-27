@@ -102,6 +102,8 @@ ul {
     .benefits-list {
         flex-wrap: nowrap;
         gap: 88px;
+        align-items: center;
+        justify-content: center;
     }
     .benefits-list-item:after {
         content:'';
