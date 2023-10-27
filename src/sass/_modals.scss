@@ -1,6 +1,8 @@
 .backdrop,
 .backdrop * {
     box-sizing: content-box;
+    margin: 0;
+    padding: 0;
 }
 
 .backdrop {
@@ -206,7 +208,6 @@
     position: absolute;
     left: 73px;
     top: 64.5%;
-	background-color: none;
 }
 
 .modal-buy-label-icon-span-1 {
@@ -882,5 +883,27 @@
     .modal-subscribe-close {
         top: 14px;
         left: 87%;
+    }
+}
+
+@media (min-width: 1160px) {
+    .modal-buy-label-icon-phone {
+        top: 73%;
+        left: 73px;
+    }
+
+    .modal-buy-label-icon-span-1 {
+        top: 73.2%;
+        left: 115px;
+    }
+
+    .modal-buy-label-icon-span-2 {
+        top: 73.1%;
+        left: 175px;
+    }
+
+    .modal-buy-label-icon-card {
+        top: 87%;
+        left: 80%;
     }
 }
