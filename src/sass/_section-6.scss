@@ -33,6 +33,7 @@
     }
     .review__item__card {
         padding: 0 24px 42px;
+        width: 360px;
     }
 }
 @media (min-width: 768px) {
@@ -51,6 +52,7 @@
     }
     .review__item__card {
         padding: 0 16px 42px;
+        width: 344px;
     }
 }
 .review__slider {
@@ -133,7 +135,7 @@ button {
     justify-content: center;
     padding: 0 18px 42px;
     text-align: center;
-    width: 360px;
+    width: 335px;
     height: 200px;
     flex-shrink: 0;
     border-radius: 15px;
