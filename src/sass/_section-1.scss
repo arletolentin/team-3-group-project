@@ -23,10 +23,10 @@ ul {
 .benefits-lists-item-icon-svg {
     width: 32px;
     height: 32px;
-    fill: currentColor;
+    fill: var(--orewood);
 }
 .benefits-lists-item-icon-use {
-    fill: currentColor;
+    fill: var(--orewood);
 }
 .benefits-lists-item-icon {
     display: flex;
@@ -37,8 +37,7 @@ ul {
     border: 1px solid rgba(255, 255, 255, 0.5);
     margin-bottom: 22px;
     border-radius: 50%;
-    fill: currentColor;
-    
+    fill: var(--orewood);    
 }
 .benefits-list-item {
     width: 308px;
