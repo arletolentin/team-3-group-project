@@ -10,8 +10,54 @@
     --slate: #FAFAFA;
     --white: #FFF;
     --palewhite: #d7e4f940;
-
-
+    --swiper-pagination-bullet-size: 13px;
+    --swiper-pagination-bullet-width: 16px;
+    --swiper-pagination-bullet-border-radius: 10px;
+    --swiper-pagination-active-color: var(--orange);
+}
+.mySwiper {
+    width: 335px;
+    height: 285px;
+    margin-bottom: 50px;
+}
+@media (min-width: 1200px) {
+    .mySwiper {
+        width: 1136px !important;
+        height: 285px;
+        margin-bottom: 50px;
+    }
+    .review__slider {
+        width: 360px !important;
+    }
+    .review__contianer {
+        width: 1136px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    .review__item__card {
+        padding: 0 24px 42px;
+    }
+}
+@media (min-width: 768px) {
+    .mySwiper {
+        width: 704px;
+        height: 285px;
+        margin-bottom: 50px;
+    }
+    .review__slider {
+        width: 344px !important;
+    }
+    .review__contianer {
+        width: 768px;
+        padding: 0 32px;
+        margin: 0 auto;
+    }
+    .review__item__card {
+        padding: 0 16px 42px;
+    }
+}
+.review__slider {
+    width: 355px !important;
 }
 ul {
     list-style-type: none;
@@ -25,8 +71,8 @@ button {
     padding-bottom: 128px;
 }
 .review__contianer {
-    width: 1136px;
-    padding: 0 36px;
+    width: 375px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 .review__list {
@@ -45,19 +91,6 @@ button {
 }
 .review__content {
     margin-bottom: 32px;
-}
-.review__item {
-    justify-content: center;
-    padding: 0 24px 26px;
-    text-align: center;
-    width: 360px;
-    height: 200px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    border: 1px solid var(--lightgray);
-    background: var(--white);
-    box-shadow: 0px 9.04932px 26.57166px 0px var(--palewhite);
-    position: relative;
 }
 .chocolate {
     color: var(--orange);
@@ -82,7 +115,7 @@ button {
 }
 .review__img {
     position: absolute;
-    transform: translateY(-50px);
+    transform: translateY(-80px);
 }
 .review__name {
     margin-bottom: 24px;
@@ -96,9 +129,21 @@ button {
     line-height: 24px; /* 133.333% */
 }
 .review__item__card {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 0 18px 42px;
+    text-align: center;
+    width: 360px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid var(--palewhite);
+    background: var(--white);
+    box-shadow: 0px 9.04932px 26.57166px 0px var(--palewhite);
+    position: relative;
 }
 .review__comment {
     color: var(--lightgray);
@@ -121,32 +166,16 @@ button {
     border-radius: 100px;
     border: 1px solid var(--orange);
     display: flex;
-    width: 142px;
-    height: 22px;
+    width: 222px;
+    height: 50px;
     padding: 14px 40px;
     justify-content: center;
     align-items: flex-start;
     gap: 14px;
     flex-shrink: 0;
 }
-.review__buton2x {
+.review__button:hover {
     background-color: var(--orange);
-    border-radius: 100px;
-    border: 1px solid var(--orange);
-    padding: 10px;
-    margin-bottom: 50px;
-    width: 50px;
-    height: 13px;
-}
-.review__butonton {
-    width: 13px;
-    height: 13px;
-    border-radius: 100px;
-    border: unset;
-}
-.review__btn__container {
-    display: flex;
-    gap: 13px;
-    height: 20px;
-    margin-bottom: 50px;
+    color: var(--white);
+    transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }

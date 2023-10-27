@@ -4,6 +4,7 @@
         <title>
             Section-6
         </title>
+        <link rel="stylesheet" href="style.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@800&display=swap" rel="stylesheet">
@@ -12,39 +13,74 @@
         <section class="review__section">
             <div class="review__contianer">
                 <h1 class="review__heading"><span class="chocolate">CHOCOLATE</span><span class="is__love"> IS LOVED</span></h1>
-                <div class="review__content">
-                    <ul class="review__list">
-                        <li class="review__item">
-                           <div class="review__item__card">
-                                <img src="images/review-img-1.jpg" class="review__img" alt="white girl with black sando">
-                                <h2 class="review__name">Victoria Dobrzhanska</h2>
-                                <p class="review__comment">I love the chocolate bar. Perfect combination<br>of the light crispywafer, covered with the thin<br>layer chocolate.</p>
-                            </div>
-                        </li>
-                         <li class="review__item">
-                            <div class="review__item__card">
-                                <img src="images/review-img-2.jpg" class="review__img" alt="black boy looking straight">
-                                <h2 class="review__name">Nazar Babenko</h2>
-                                <p class="review__comment">This chocolate confection is a delight! A<br>delight! The wafer is light and crisp, the<br>hazelnut cream is smooth, and the chocolate<br>is good.</p>
-                            </div>
-                        </li>  
-                        <li class="review__item">
-                            <div class="review__item__card">
-                                <img src="images/review-img-3.jpg" class="review__img" alt="beautiful girl">
-                                <h2 class="review__name">Olena Kampusch</h2>
-                                <p class="review__comment">Chocolate is a family favourite treat. Love the<br>delicious smooth chocolate and the<br>creaminess inside. The wafer is soft but<br>crunchy</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="review__btn__container">
-                    <button class="review__buton2x"> <span hidden>buton</span></button>
-                    <button class="review__butonton"> <span hidden>buton</span></button>
-                    <button class="review__butonton"> <span hidden>buton</span></button>
-                    <button class="review__butonton"> <span hidden>buton</span></button>
-                </div>
-                <button class="review__button" data-modal-open-1>Leave a review</button>
+                <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="25" slides-per-view="3">
+                    <swiper-slide class="review__slider">
+                        <div class="review__item__card">
+                            <img src="images/review-img-1.jpg" class="review__img" alt="white girl with black sando">
+                            <h2 class="review__name">Victoria Dobrzhanska</h2>
+                            <p class="review__comment">I love the chocolate bar. Perfect combination<br>of the light crispywafer, covered with the thin<br>layer chocolate.</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="review__slider">
+                        <div class="review__item__card">
+                            <img src="images/review-img-2.jpg" class="review__img" alt="black boy looking straight">
+                            <h2 class="review__name">Nazar Babenko</h2>
+                            <p class="review__comment">This chocolate confection is a delight! A<br>delight! The wafer is light and crisp, the<br>hazelnut cream is smooth, and the chocolate<br>is good.</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="review__slider">
+                        <div class="review__item__card">
+                            <img src="images/review-img-3.jpg" class="review__img" alt="beautiful girl">
+                            <h2 class="review__name">Olena Kampusch</h2>
+                            <p class="review__comment">Chocolate is a family favourite treat. Love the<br>delicious smooth chocolate and the<br>creaminess inside. The wafer is soft but<br>crunchy</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="review__slider">
+                        <div class="review__item__card">
+                            <img src="images/review-img-4.jpg" class="review__img" alt="beautiful girl">
+                            <h2 class="review__name">Natalia Sus</h2>
+                            <p class="review__comment">The chocolate assortment was delicious. Both<br>dark and milk chocolate pieces were smooth<br>and just right on the sweetness level.</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="review__slider">
+                        <div class="review__item__card">
+                            <img src="images/review-img-5.jpg" class="review__img" alt="black boy looking straight">
+                            <h2 class="review__name">Danilo Nottingham</h2>
+                            <p class="review__comment">This is delicious. It so rich and flavorful you<br>dont need to use as many. I love topping an<br>apple with almond butter and these chips for<br>a snack.</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="review__slider">
+                        <div class="review__item__card">
+                            <img src="images/review-img-6.jpg" class="review__img" alt="white girl with black sando">
+                            <h2 class="review__name">Irina Tydnyuk</h2>
+                            <p class="review__comment">This is simply the best chocolate around, and<br>I'm just thrilled to support a local company!<br>Best local chocolate - world class :)</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="review__slider">
+                        <div class="review__item__card">
+                            <img src="images/review-img-1.jpg" class="review__img" alt="white girl with black sando">
+                            <h2 class="review__name">Victoria Dobrzhanska</h2>
+                            <p class="review__comment">I love the chocolate bar. Perfect combination<br>of the light crispywafer, covered with the thin<br>layer chocolate.</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="review__slider">
+                        <div class="review__item__card">
+                            <img src="images/review-img-2.jpg" class="review__img" alt="black boy looking straight">
+                            <h2 class="review__name">Nazar Babenko</h2>
+                            <p class="review__comment">This chocolate confection is a delight! A<br>delight! The wafer is light and crisp, the<br>hazelnut cream is smooth, and the chocolate<br>is good.</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide class="review__slider">
+                        <div class="review__item__card">
+                            <img src="images/review-img-3.jpg" class="review__img" alt="beautiful girl">
+                            <h2 class="review__name">Olena Kampusch</h2>
+                            <p class="review__comment">Chocolate is a family favourite treat. Love the<br>delicious smooth chocolate and the<br>creaminess inside. The wafer is soft but<br>crunchy</p>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+                <button class="review__button">Leave a review</button>
             </div>
         </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     </body>
 </hmtl>
